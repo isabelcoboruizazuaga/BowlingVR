@@ -5,16 +5,17 @@ using UnityEngine;
 public class Mirar : MonoBehaviour
 {
  public Canvas canvas;
+    public Camera camaraAMirar;
     // Start is called before the first frame update
     void Start()
     {
-        
+        camaraAMirar = Camera.main;
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        
+        canvas.transform.rotation=Quaternion.LookRotation(camaraAMirar.transform.forward);
     }
 
     public void Mira()
