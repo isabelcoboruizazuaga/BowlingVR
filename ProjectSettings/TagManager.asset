@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ball
   - Bolo
+  - Anchor
+  - Bol
   layers:
   - Default
   - TransparentFX
@@ -38,7 +40,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Teleport
   m_SortingLayers:
   - name: Default
     uniqueID: 0

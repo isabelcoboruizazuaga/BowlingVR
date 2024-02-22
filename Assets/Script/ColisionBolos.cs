@@ -7,13 +7,13 @@ public class ColisionBolos : MonoBehaviour
 {
     private GameObject[] bolos;
     private int caidos;
-    private float treshold=90f;
+    public float treshold = 0.4f;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //ROTACION <-0.019/0.014 -0.002
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class ColisionBolos : MonoBehaviour
 
     private IEnumerator OnTriggerEnter(Collider other)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         if (other.tag == "Ball")
         {
             Debug.Log("plano de bolos");
@@ -37,7 +37,7 @@ public class ColisionBolos : MonoBehaviour
         bolos = GameObject.FindGameObjectsWithTag("Bolo");
 
         foreach (GameObject bolo in bolos) {
-            if (bolo.transform.rotation.x > -91f  || bolo.transform.rotation.x < -89f )
+            if (bolo.transform.up.y < treshold)
             {
                 caidos++;
                 Destroy(bolo);
