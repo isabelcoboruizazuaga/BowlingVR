@@ -19063,7 +19063,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.5905e-41, y: 0.3466835, z: 4.5905e-41, w: 9.403955e-38}
+  m_BoundingSphereOverride: {x: 2.02038e-39, y: 3.5202624e+31, z: 7.31e-43, w: 3.5178465e+31}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -19921,7 +19921,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: 0, z: 0, w: -4.08518e-40}
+  m_BoundingSphereOverride: {x: 4.6e-44, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -22115,6 +22115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bolos
       objectReference: {fileID: 0}
+    - target: {fileID: 3884829636654690312, guid: 74ae5d0bee86df94585a1d63a579adc9, type: 3}
+      propertyPath: bolosPrefab
+      value: 
+      objectReference: {fileID: 2442504132288383317}
     - target: {fileID: 8983031742393661102, guid: 74ae5d0bee86df94585a1d63a579adc9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.019
@@ -22160,6 +22164,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74ae5d0bee86df94585a1d63a579adc9, type: 3}
+--- !u!1 &2442504132288383317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1691978927688752218, guid: 74ae5d0bee86df94585a1d63a579adc9, type: 3}
+  m_PrefabInstance: {fileID: 2442504132288383316}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -22167,8 +22176,8 @@ SceneRoots:
   - {fileID: 1825262782}
   - {fileID: 1703568386}
   - {fileID: 590265446}
-  - {fileID: 2442504132288383316}
   - {fileID: 154688465}
   - {fileID: 1644657055}
   - {fileID: 1479044325}
   - {fileID: 225848312}
+  - {fileID: 2442504132288383316}
