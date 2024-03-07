@@ -4818,7 +4818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85d753b2925c14b47a76b2d1614a1542, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8631102915713013051, guid: 85d753b2925c14b47a76b2d1614a1542, type: 3}
       propertyPath: m_Layer
@@ -5126,7 +5126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6366810985193059439, guid: 85d753b2925c14b47a76b2d1614a1542, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6339338374028601341, guid: 85d753b2925c14b47a76b2d1614a1542, type: 3}
       propertyPath: m_Layer
@@ -22118,7 +22118,7 @@ PrefabInstance:
     - target: {fileID: 3884829636654690312, guid: 74ae5d0bee86df94585a1d63a579adc9, type: 3}
       propertyPath: bolosPrefab
       value: 
-      objectReference: {fileID: 2442504132288383317}
+      objectReference: {fileID: 6791738228637770712, guid: 6f957872886b5c74f917763d0ac6d9dc, type: 3}
     - target: {fileID: 8983031742393661102, guid: 74ae5d0bee86df94585a1d63a579adc9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.019
@@ -22164,11 +22164,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74ae5d0bee86df94585a1d63a579adc9, type: 3}
---- !u!1 &2442504132288383317 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1691978927688752218, guid: 74ae5d0bee86df94585a1d63a579adc9, type: 3}
-  m_PrefabInstance: {fileID: 2442504132288383316}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
