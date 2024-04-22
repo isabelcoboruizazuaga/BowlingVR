@@ -18,6 +18,7 @@ public class ColisionBolos : MonoBehaviour
     private int[] marcador=new int[11]; //puntuacion total
     private int juego = 1;
     private int tirada = 1;
+    private bool pleno = false;
 
 
 
