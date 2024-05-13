@@ -20,6 +20,9 @@ public class ColisionBolos : MonoBehaviour
     private int tirada = 1;
     private bool pleno = false;
 
+    public Transform aparicionBola;
+    public GameObject bolaPrefab;
+
 
 
 
@@ -45,6 +48,9 @@ public class ColisionBolos : MonoBehaviour
         yield return new WaitForSeconds(5);
         if (other.tag == "Ball")
         {
+            var peso= other.GetComponent<BallSoundController>().peso;
+            var pesoEnKgs = other.GetComponent<BallSoundController>().pesoEnKgs;
+
             //Se cuentan los bolos
             cuentaCaidos();
 
@@ -53,7 +59,20 @@ public class ColisionBolos : MonoBehaviour
 
             //Se actualiza la puntuación
             Puntuacion();
+
+            GeneraBola(bolaPrefab, pesoEnKgs,peso);
         }
+    }
+
+    private void GeneraBola(GameObject bola,int pesoKgs, float peso)
+    {
+        var bolaControll = bola.GetComponent<BallSoundController>();
+        bolaControll.peso = peso;
+        bolaControll.pesoEnKgs = pesoKgs;
+        bolaControll.changePeso();
+
+        var miBola= Instantiate(bola, aparicionBola.position,aparicionBola.rotation);
+        miBola.GetComponent<Rigidbody>().AddForce(new Vector3(1,0,0) *1.5f, ForceMode.Impulse);
     }
 
     private void cuentaCaidos()
@@ -61,7 +80,7 @@ public class ColisionBolos : MonoBehaviour
         bolos = GameObject.FindGameObjectsWithTag("Bolo");
 
         foreach (GameObject bolo in bolos) {
-            if ((bolo.transform.up.y < treshold)||(bolo.transform.position.y<-1.5))
+            if ((bolo.transform.up.y < treshold)||(bolo.transform.position.y<-.5))
             {
                 caidos++;
                 Destroy(bolo);
@@ -173,15 +192,15 @@ public class ColisionBolos : MonoBehaviour
         if (puntuacion[juego][1]==10) //si pleno
         {
             pleno = true;
-            //se suman los puntos de las dos siguientes tiradas
-            marcador[juego] = 10 + puntuacion[juego+1][1] + puntuacion[juego + 1][2];
+            
+            marcador[juego] = 20 + puntuacion[juego][1];
         }
         else
         {
             if(puntuacion[juego][1] + puntuacion[juego][2] == 10) //Si es semipleno
             {
                 //Se suma la siguiente tirada
-                marcador[juego] = 10 + puntuacion[juego + 1][1];
+                marcador[juego] = 10 + puntuacion[juego][1];
             }
             else
             {
@@ -190,11 +209,7 @@ public class ColisionBolos : MonoBehaviour
             }
         }
 
-        textoPuntos.text += " " + marcador[juego];
+        textoPuntos.text += " " + marcador[juego] +"|";
     }
 
-    private void CalculaPuntosTotales()
-    {
-
-    }
 }
