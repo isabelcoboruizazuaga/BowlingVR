@@ -1134,7 +1134,6 @@ GameObject:
   - component: {fileID: 127885134}
   - component: {fileID: 127885133}
   - component: {fileID: 127885132}
-  - component: {fileID: 127885131}
   - component: {fileID: 127885130}
   m_Layer: 0
   m_Name: Plane (1)
@@ -1155,21 +1154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cde80f2fe6fe6e47b57eb962721c06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aparicionBola: {fileID: 165335085}
-  bolaPrefab: {fileID: 424594858964415916, guid: 1be75124d3e50ad4997a90e0d8d1fe74, type: 3}
---- !u!114 &127885131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127885129}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e3872beeaa418b44add4e935dddd2b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bolosPrefab: {fileID: 6791738228637770712, guid: 6f957872886b5c74f917763d0ac6d9dc, type: 3}
   aparicionBola: {fileID: 165335085}
   bolaPrefab: {fileID: 424594858964415916, guid: 1be75124d3e50ad4997a90e0d8d1fe74, type: 3}
 --- !u!64 &127885132
@@ -16904,7 +16888,6 @@ GameObject:
   - component: {fileID: 1620417935}
   - component: {fileID: 1620417934}
   - component: {fileID: 1620417933}
-  - component: {fileID: 1620417932}
   - component: {fileID: 1620417931}
   m_Layer: 0
   m_Name: Plane (2)
@@ -16925,21 +16908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cde80f2fe6fe6e47b57eb962721c06f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aparicionBola: {fileID: 165335085}
-  bolaPrefab: {fileID: 424594858964415916, guid: 1be75124d3e50ad4997a90e0d8d1fe74, type: 3}
---- !u!114 &1620417932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1620417930}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e3872beeaa418b44add4e935dddd2b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bolosPrefab: {fileID: 6791738228637770712, guid: 6f957872886b5c74f917763d0ac6d9dc, type: 3}
   aparicionBola: {fileID: 165335085}
   bolaPrefab: {fileID: 424594858964415916, guid: 1be75124d3e50ad4997a90e0d8d1fe74, type: 3}
 --- !u!64 &1620417933
